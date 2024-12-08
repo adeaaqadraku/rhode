@@ -229,6 +229,49 @@ body {
     color: #fff;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  position: relative;
+  height: 90%;
+  background-image: url('holidayduomainpng2000x2000webonzzciegziks.png'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border: 1px solid lightgray;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.holiday-shop-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ffffff;
+  color: #d62828; 
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px; 
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.holiday-shop-button:hover {
+  background: #d62828; 
+  color: #ffffff; 
+  border-color: #ffffff;
+}
+
     </style>
 </head>
 <body>
@@ -299,7 +342,11 @@ body {
         </div>
     </div>
 
-
+    <div class="background">
+        <div class="button-container">
+          <button class="holiday-shop-button">The Holiday Shop</button>
+        </div>
+      </div>
 
 </body>
 </html>
