@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    .first {
+        text-align: center;
+        background-color: #F0F0F0;
+        padding: 8px;
+        border-radius: 6px;
+        margin: 10px;
+        width: 1450px;
+    }
+
+    .image-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    img {
+        width: 2000px;
+        max-width: 1500px;
+        height: 600px;
+        object-fit: cover;
+        margin: 11px;
+        border-radius: 10px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1470px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .logo a {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .nav-links li a:hover {
+        color: #666;
+    }
+
+    .c a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 0.9;
+    }
+
+    .c a:hover {
+        background-color: #333;
+    }
+
+
+    .split-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f0; /* Background color similar to the image */
+  border-radius: 15px;
+  overflow: hidden; /* Keeps the image and text aligned with rounded corners */
+  margin: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-text {
+  flex: 1;
+  padding: 40px;
+  background-color: #f4f4f0; /* Match background to the container */
+}
+
+.split-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.split-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.split-text .footnote {
+  font-size: 0.9em;
+  color: #777;
+}
+
+</style>
+<body>
+    <div class="first">
+        FREE EU SHIPPING ON ORDERS OVER €70
+    </div>
+
+    <div class="image-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="rhode.html">rhode</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="futures.html">Futures</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <div class="c">
+                <a href="#">Sign In</a>
+            </div>
+        </nav>
+        
+
+        <div class="split-section">
+            <div class="split-image">
+              <img src="image.jpg" alt="Rhode Product Image">
+            </div>
+            <div class="split-text">
+              <h2>rhode futures foundation</h2>
+              <p>
+                From day one, rhode pledged a minimum of 1% of sales and ongoing team efforts to support organizations actively dismantling the barriers that impede women* in their careers and limit their access to healthcare, while helping them in pursuing their long-term goals. RFF partners with organizations that prioritize empowering women, especially those from marginalized communities, providing them with the essential resources to chart their own paths forward.
+              </p>
+              <p class="footnote">
+                *For all women, including non-binary, trans, non-cis, and all women-identified persons.
+              </p>
+            </div>
+          </div>
+          
+</body>
+</html>
