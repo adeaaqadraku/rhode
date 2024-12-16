@@ -211,57 +211,63 @@ body {
     margin-bottom: 35px;
     color: #555;
 }
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-.button {
-    font-size: 1.2; 
-    font-weight: bold;
-    color: #444;
-    background-color: transparent;
-    border: 2px solid #444;
-    padding: 12px 28px; 
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+        .holiday-container {
+            max-width: 1200px; /* Increased container size */
+            margin: 50px auto;
+            overflow: hidden; /* Clearfix for floated elements */
+        }
 
-.button:hover {
-    background-color: #444;
-    color: #fff;
-}
-/* holiday button */
+        .holiday-image {
+            float: left;
+            width: 50%; /* Increased image width */
+            padding-right: 30px; /* More space between image and text */
+        }
 
-.holiday-image {
-  width: 100%;
-  height: 700px; 
-  object-fit: cover; /
-}
+        .holiday-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
 
-.holiday-section {
-  position: relative;
-  text-align: center;
-  margin-top: 20px;
-}
+        .holiday-content {
+            float: right;
+            width: 45%; /* Increased text section width */
+        }
 
-.holiday-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  color: #e00000;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border: 1px solid #e00000;
-  border-radius: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
+        .holiday-title {
+            font-size: 2em; /* Increased title font size */
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-.holiday-button:hover {
-  background-color: #e00000;
-  color: #fff;
-}
+        .holiday-text {
+            font-size: 1.2em; /* Increased text font size */
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px; /* Added more space below text */
+        }
 
+        .holiday-button {
+            display: inline-block;
+            padding: 15px 30px; /* Increased button size */
+            background-color: #d33c3c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .holiday-button:hover {
+            background-color: #b92e2e;
+        }
 
 
 
@@ -393,18 +399,14 @@ body {
             </div>
         </nav>
         
-        <img src="tumblr_e10e8fb4e112d6bea91e4f24ed40db94_638cd63c_500.gif" alt="rhode">
-        <div class="bottomright">
-            <p>CINNAMON BABY GIRL</p>
-            <p>Peptide Lip Tint in</p>
-            <p>Cinnamon Roll is here.</p>
-        </div>
+        <img src="images/haileyrhodestrawberry.webp" alt="rhode">
+      
     </div>
 
     <div class="firstproduct">
         <div class="card">
             <h2 class="title">tint</h2>
-            <img src="IMG_5124.webp" alt="Peptide Lip Tint" class="image">
+            <img src="images/IMG_5124.webp" alt="Peptide Lip Tint" class="image">
             <h3 class="name">PEPTIDE LIP TINT</h3>
             <p class="description">Limited edition shade</p>
             <p class="price">€18.00</p>
@@ -412,7 +414,7 @@ body {
         
         <div class="card">
             <h2 class="title">duo</h2>
-            <img src="bdayduo-main.webp" alt="Birthday Duo" class="image">
+            <img src="images/bdayduo-main.webp" alt="Birthday Duo" class="image">
             <h3 class="name">BIRTHDAY DUO</h3>
             <p class="description">Pocket Blush + Peptide Lip Tint</p>
             <p class="price">€42.00</p>
@@ -420,7 +422,7 @@ body {
         
         <div class="card">
             <h2 class="title">case</h2>
-            <img src="RJ-case-pro-nolip-main-png-2000x2000_df00016c-46b3-4075-8713-518566f37d08_1024x1024.webp" alt="Fall Lip Case" class="image">
+            <img src="images/RJ-case-pro-nolip-main-png-2000x2000_df00016c-46b3-4075-8713-518566f37d08_1024x1024.webp" alt="Fall Lip Case" class="image">
             <h3 class="name">FALL LIP CASE</h3>
             <p class="description">Four limited edition colors</p>
             <p class="price">€38.00</p>
@@ -441,13 +443,24 @@ body {
         </div>
     </div>
 
-    <div class="holiday-section">
-        <img src="holidayduomainpng2000x2000webonzzciegziks.png" alt="Holiday background" class="holiday-image">
-        <button class="holiday-button">The Holiday Shop</button>
+   
+
+
+    <div class="holiday-container">
+      <!-- Floated Image Section -->
+      <div class="holiday-image">
+          <img src="images/holiday-duo-hero-desktop-1_2480x_0f4e6fef-3fb5-480f-8b48-7d34ad2fda81.webp" alt="Rhode Holiday Shop">
       </div>
-      
 
-
+      <!-- Text and Button Section -->
+      <div class="holiday-content">
+          <h1 class="holiday-title">This season, let your holiday glow come naturally</h1>
+          <p class="holiday-text">
+              Just like snowflakes, no two are the same! Whether you’re gifting some self-care or treating yourself, Rhode’s hydrating essentials are the perfect addition to your holiday magic. With skin as radiant as twinkling lights, you’ll sleigh every celebration.
+          </p>
+          <a href="#" class="holiday-button">THE HOLIDAY SHOP</a>
+      </div>
+  </div>
 
 
 
