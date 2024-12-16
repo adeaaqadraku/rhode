@@ -210,6 +210,172 @@
                 min-height: 280px;
             }
         }
+
+
+
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px; /* Increased max width */
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Section */
+.text-section {
+    flex: 1;
+    padding: 60px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1 {
+    color: #333;
+    font-size: 40px; /* Increased font size */
+    margin-bottom: 30px;
+}
+
+.text-section p {
+    color: #555;
+    font-size: 20px; /* Larger font size for readability */
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #f9f8f7;
+  color: #666;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo h1 {
+  font-size: 80px;
+  color: #444;
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-signup {
+  max-width: 300px;
+}
+
+.footer-signup p {
+  margin: 10px 0;
+}
+
+.signup-form {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.signup-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #222;
+}
+
+.privacy {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.privacy a {
+  color: #444;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #999;
+}
+
 </style>
 <body>
     <div class="first">
@@ -228,7 +394,7 @@
                 <li><a href="cart.html">Cart</a></li>
             </ul>
             <div class="c">
-                <a href="#">Sign In</a>
+                <a href="sign.html">Sign In</a>
             </div>
         </nav>
         
@@ -274,6 +440,87 @@
 
 
 
+        <div class="container">
+            <div class="image-section">
+                <img src="Kindred-Single-mother-Stocksy-3935596-9933de3af4ec48b1ac42276d0e5eb8f2.jpg" alt="Family" />
+            </div>
+            <div class="text-section">
+                <h1>LIFT Family Goal Fund</h1>
+                <p>
+                    LIFT is a national non-profit that invests in low-income families 
+                    to break generational cycles of poverty and promotes wellbeing, 
+                    social connection, and financial stability. LIFT strengthens families 
+                    by providing cash buffers to parents (mostly moms) so they can work 
+                    toward long-term success. With LIFT’s support, mothers reinvest 
+                    in their careers, further their goals, and provide a better future 
+                    for themselves and their families—regardless of race, ethnicity, or 
+                    zip code.
+                </p>
+              
+            </div>
+        </div>
+
+
         
+      <div class="footer">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <h1>rhode</h1>
+          </div>
+          <div class="footer-signup">
+            <p>Join us on the rhode to an effortless glow.</p>
+            <p>Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+            <form class="signup-form">
+              <input type="email" placeholder="Email Address" />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p class="privacy">By signing up, you agree to our <a href="#">Privacy Policy</a>*.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h4>NAVIGATE</h4>
+              <ul>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Rhode Futures</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">VLOG</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SOCIAL</h4>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">TikTok</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>OFFICIAL</h4>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SUPPORT</h4>
+              <ul>
+                <li>We’re here M-F 9am - 5pm PST.</li>
+                <li>Email: <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© rhode 2024</p>
+        </div>
+      </div>
+      
+
 </body>
 </html>
