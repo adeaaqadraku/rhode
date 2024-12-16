@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
     <style>
-
-
-body {
+          body {
             margin: 0;
             font-family: "Montserrat", sans-serif;
             background-color: #f9f9f9;
@@ -97,6 +94,8 @@ body {
 
 
 
+
+
         /* General Reset */
 * {
     margin: 0;
@@ -105,14 +104,21 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f6f2;
+}
 
 /* Main Container */
 .container {
     display: flex;
     width: 90%;
-    max-width: 1400px; /* Make the layout bigger */
-    height: 700px; /* Increased height */
+    max-width: 1400px; /* Larger container */
+    height: 700px;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -137,36 +143,36 @@ body {
     bottom: 60px;
     left: 40px;
     color: #fff;
-    font-size: 36px; /* Bigger text */
+    font-size: 36px;
     font-weight: bold;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Right Section: Login Form */
+/* Right Section: Form */
 .right-section {
     width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f8f6f2;
-    padding: 60px;
+    padding: 50px;
 }
 
-.login-box {
+.form-box {
     width: 100%;
     max-width: 450px;
     text-align: center;
 }
 
-.login-box h2 {
-    font-size: 36px; /* Larger title */
-    margin-bottom: 40px;
+.form-box h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
     color: #333;
     font-weight: bold;
 }
 
 .input-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .input-group input {
@@ -183,8 +189,8 @@ body {
     border-color: #888;
 }
 
-/* Updated Button */
-.sign-in-btn {
+/* Register Button */
+.register-btn {
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -194,42 +200,32 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease, transform 0.2s ease;
+    transition:0.3s ease, transform 0.2s ease;
 }
 
-.sign-in-btn:hover {
+.register-btn:hover {
     background: linear-gradient(135deg, #555, #777);
-    transform: translateY(-2px); /* Slight hover effect */
+    transform: translateY(-2px);
 }
 
-.forgot-password {
-    display: inline-block;
-    margin: 20px 0;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
+/* Sign In Link */
 p {
+    margin-top: 20px;
     font-size: 16px;
     color: #555;
 }
 
-.sign-up {
+.sign-in-link {
     color: #333;
     font-weight: bold;
     text-decoration: none;
 }
 
-.sign-up:hover {
+.sign-in-link:hover {
     text-decoration: underline;
 }
 
- 
+
 
 .footer {
   background-color: #f9f8f7;
@@ -338,7 +334,6 @@ p {
     </style>
 </head>
 <body>
-
     <div class="first">
         FREE EU SHIPPING ON ORDERS OVER €70
     </div>
@@ -358,7 +353,8 @@ p {
                 <a href="sign.html">Sign In</a>
             </div>
         </nav>
-   
+
+
         <div class="container">
             <!-- Left Section: Image and Text -->
             <div class="left-section">
@@ -368,21 +364,26 @@ p {
                 </div>
             </div>
     
-            <!-- Right Section: Login Form -->
+            <!-- Right Section: Create Account Form -->
             <div class="right-section">
-                <div class="login-box">
-                    <h2>Login</h2>
+                <div class="form-box">
+                    <h2>Create Account</h2>
                     <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
                         <div class="input-group">
                             <input type="email" placeholder="Email" required>
                         </div>
                         <div class="input-group">
                             <input type="password" placeholder="Password" required>
                         </div>
-                        <button type="submit" class="sign-in-btn">SIGN IN</button>
+                        <button type="submit" class="register-btn">REGISTER</button>
                     </form>
-                    <a href="#" class="forgot-password">Forgot your password?</a>
-                    <p>Don't have an account? <a href="up.html" class="sign-up">Sign up!</a></p>
+                    <p>Already have an account? <a href="sign.html" class="sign-in-link">Sign in!</a></p>
                 </div>
             </div>
         </div>
@@ -448,5 +449,6 @@ p {
         </div>
       </div>
       
+
 </body>
 </html>
