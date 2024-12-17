@@ -240,15 +240,15 @@ body {
         }
 
         .holiday-container {
-            max-width: 1200px; /* Increased container size */
+            max-width: 1200px; 
             margin: 50px auto;
-            overflow: hidden; /* Clearfix for floated elements */
+            overflow: hidden; 
         }
 
         .holiday-image {
             float: left;
-            width: 50%; /* Increased image width */
-            padding-right: 30px; /* More space between image and text */
+            width: 50%; 
+            padding-right: 30px;
         }
 
         .holiday-image img {
@@ -259,25 +259,25 @@ body {
 
         .holiday-content {
             float: right;
-            width: 45%; /* Increased text section width */
+            width: 45%; 
         }
 
         .holiday-title {
-            font-size: 2em; /* Increased title font size */
+            font-size: 2em; 
             margin-bottom: 20px;
             color: #333;
         }
 
         .holiday-text {
-            font-size: 1.2em; /* Increased text font size */
+            font-size: 1.2em; 
             color: #555;
             line-height: 1.6;
-            margin-bottom: 30px; /* Added more space below text */
+            margin-bottom: 30px; 
         }
 
         .holiday-button {
             display: inline-block;
-            padding: 15px 30px; /* Increased button size */
+            padding: 15px 30px; 
             background-color: #d33c3c;
             color: #fff;
             text-decoration: none;
@@ -422,6 +422,25 @@ body {
   background-color: #8F7A5C;
 }
 
+
+.add-to-cart {
+  display: block;
+  width: 120px;
+  margin: 10px auto;
+  padding: 8px 0;
+  background-color: #D4C2A5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #8F7A5C;
+}
     </style>
 </head>
 <body>
@@ -466,6 +485,7 @@ body {
             <h3 class="name">BIRTHDAY DUO</h3>
             <p class="description">Pocket Blush + Peptide Lip Tint</p>
             <p class="price">€42.00</p>
+            <button class="add-to-cart" onclick="window.location.href='cart2.html'">Add to Cart</button>
         </div>
         
         <div class="card">
