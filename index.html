@@ -21,11 +21,12 @@
 
         .first {
             text-align: center;
-            background-color: #F0F0F0;
+            background-color:  #F3E5C9;
             padding: 8px;
             border-radius: 6px;
             margin: 10px;
             width: 1450px;
+            color: #5D4B3E;
         }
 
         .image-container {
@@ -62,7 +63,7 @@
             font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
-            color: black;
+            color: #967969;
         }
 
         .nav-links {
@@ -75,17 +76,17 @@
 
         .nav-links li a {
             text-decoration: none;
-            color: black;
+            color: #967969;
             font-weight: 500;
         }
 
         .nav-links li a:hover {
-            color: #666;
+            color: #5D4B3E;
         }
 
         .c a {
             text-decoration: none;
-            background-color: black;
+            background-color: #967969;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -93,17 +94,10 @@
         }
 
         .c a:hover {
-            background-color: #333;
+            background-color: #5D4B3E;
         }
 
-        .bottomright {
-            position: absolute;
-            bottom: 3%;
-            left: 20px;
-            font-size: 20px;
-            color: #1A1A1A;
-            font-family: "Montserrat", sans-serif;
-        }
+    
         
         
         .firstproduct {
@@ -193,7 +187,7 @@ body {
     padding: 40px; 
     background: white; 
     border-radius: 15px; 
-    box-shadow: 4px 20px gray; 
+    box-shadow: 4px 20px #967969; 
 }
 
 .main {
@@ -214,9 +208,9 @@ body {
  .button  {
   font-size: 1.2; 
     font-weight: bold;
-    color: #444;
+    color: #967969;
     background-color: transparent;
-    border: 2px solid #444;
+    border: 2px solid #967969;
     padding: 12px 28px; 
     border-radius: 30px;
     cursor: pointer;
@@ -224,7 +218,7 @@ body {
  }
 
 .button:hover {
-    background-color: #444;
+    background-color: #967969;
     color: #fff;
 }
 
@@ -295,7 +289,7 @@ body {
 
 .footer {
   background-color: #f9f8f7;
-  color: #666;
+  color: #967969;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
@@ -309,7 +303,7 @@ body {
 
 .footer-logo h1 {
   font-size: 80px;
-  color: #444;
+  color: #967969;
   margin: 0;
   font-weight: bold;
 }
@@ -337,7 +331,7 @@ body {
 
 .signup-form button {
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #5D4B3E;
   color: white;
   border: none;
   border-radius: 5px;
@@ -345,7 +339,7 @@ body {
 }
 
 .signup-form button:hover {
-  background-color: #222;
+  background-color: #967969;
 }
 
 .privacy {
@@ -354,7 +348,7 @@ body {
 }
 
 .privacy a {
-  color: #444;
+  color: #967969;
   text-decoration: none;
 }
 
@@ -382,7 +376,7 @@ body {
 
 .footer-links a {
   text-decoration: none;
-  color: #666;
+  color: #967969;
 }
 
 .footer-links a:hover {
@@ -393,7 +387,7 @@ body {
   text-align: center;
   margin-top: 40px;
   font-size: 12px;
-  color: #999;
+  color: #967969;
 }
 
 
@@ -441,6 +435,25 @@ body {
 .add-to-cart:hover {
   background-color: #8F7A5C;
 }
+
+.add-to {
+  display: block;
+  width: 120px;
+  margin: 10px auto;
+  padding: 8px 0;
+  background-color: #D4C2A5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to:hover {
+  background-color: #8F7A5C;
+}
     </style>
 </head>
 <body>
@@ -464,7 +477,7 @@ body {
             </div>
         </nav>
         
-        <img src="images/haileyrhodestrawberry.webp" alt="rhode">
+        <img src="images/hailey.gif" alt="rhode">
       
     </div>
 
@@ -494,6 +507,7 @@ body {
             <h3 class="name">FALL LIP CASE</h3>
             <p class="description">Four limited edition colors</p>
             <p class="price">€38.00</p>
+            <button class="add-to" onclick="window.location.href='cart3.html'">Add to Cart</button>
         </div>
     </div>
 
@@ -529,6 +543,26 @@ body {
           <a href="#" class="holiday-button">THE HOLIDAY SHOP</a>
       </div>
   </div>
+
+
+
+
+  <div class="container">
+    <div class="text-section">
+        <h1>
+            To <strong>RESTORE</strong> and <strong>NURTURE</strong> the skin you have now for lasting results that reveal themselves over time.
+        </h1>
+        <button>OUR VALUES</button>
+        <ul class="links">
+            <li><a href="#">mission</a></li>
+            <li><a href="#">philanthropy</a></li>
+            <li><a href="#">sustainability</a></li>
+        </ul>
+    </div>
+    <div class="image-section">
+        <img src="/path/to/your/image.png" alt="Woman with product">
+    </div>
+</div>
 
 
 
